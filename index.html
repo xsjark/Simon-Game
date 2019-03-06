@@ -1,0 +1,19 @@
+<div class="game" id="gameid">
+  <div class="console" id="title">SIMON <small>by Ridha</small></div>
+  <div class="console" id="level">Level 0/20</div>
+  <div class="button" id="b1" onClick="sound('audio1',this.id);myPress(this.id)"></div>
+  <div class="button" id="b2" onClick="sound('audio2',this.id);myPress(this.id)"></div>
+  <div class="button" id="b3" onClick="sound('audio3',this.id);myPress(this.id)"></div>
+  <div class="button" id="b4" onClick="sound('audio4',this.id);myPress(this.id)"></div>
+  <div class="interface" id="start" onClick="startGame()">Start</div>
+  <div class="interface" id="reset" onClick="reset()">Restart</div>
+  <div class="interface">
+    <input id="strict" type="checkbox"></input>
+  <label for="strict">Strict</label>
+</div>
+</div>
+
+<audio id="audio1" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></audio>
+<audio id="audio2" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></audio>
+<audio id="audio3" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></audio>
+<audio id="audio4" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></audio>

@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+* {
+  font-family: 'Noto Sans', sans-serif;
+}
+.game {
+  width: 430px;
+  margin: auto;
+}
+#title {
+  text-align: left;
+}
+#level {
+  text-align: right;
+  margin-right: 10px;
+}
+.console{
+  width: 200px;
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+  text-align:center;
+}
+.button {
+  width: 200px;
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+.interface{
+  width: 30%;
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+  text-align:center;
+  cursor:pointer;
+}
+
+#b1 {
+  background-color: #8BC34A;
+  height: 200px;
+}
+#b2 {
+  background-color: #FF5722;
+  height: 200px;
+}
+#b3 {
+  background-color: #FFC107;
+  height: 200px;
+}
+#b4 {
+  background-color: #448AFF;
+  height: 200px;
+}
+
+.highlight {
+  animation: pulse 1s;
+}
+
+#skull, #smiley {
+  opacity: 0;
+  animation: inout 1s;
+}
+@keyframes inout {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    filter: brightness(100%);
+  }
+  50% {
+    filter: brightness(200%);
+  }
+  100% {
+    filter: brightness(100%);
+  }
+}
